@@ -1,0 +1,49 @@
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.aips'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    implementation 'org.slf4j:slf4j-api:2.0.13'
+    runtimeOnly 'ch.qos.logback:logback-classic:1.5.6'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = 'traffic.TrafficDataProcessorApp'
+}
+
+
+// Fat JAR configuration
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    manifest {
+        attributes(
+                'Main-Class': 'traffic.TrafficDataProcessorApp'
+        )
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+

@@ -2,8 +2,8 @@ TrafficDataProcessor
 
 TrafficDataProcessor is a Java-based application developed using Java 21 and Gradle. It parses traffic data from input files, analyzes it, and produces insightful statistics such as total cars seen, cars per day, top half-hours with most traffic, and periods with least traffic.
 
-Note: The project initially started with Java 25 but was downgraded to Java 21 due to compatibility issues between Java 25 and the latest Gradle version. For more details, see Gradle Issue #35054
-.
+Note: The project originally started with Java 25, but it was downgraded to Java 21 due to compatibility issues between Java 25 and the latest Gradle version. More details on this issue can be found here: 
+Gradle Issue #35054 - https://github.com/gradle/gradle/issues/35054.
 
 <u> About code base: </u>
 

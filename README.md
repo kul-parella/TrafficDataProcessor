@@ -31,7 +31,7 @@ Gradle Issue #35054 - https://github.com/gradle/gradle/issues/35054.
 
 <u> sample logs from previous runs </u>
 
-        --- Results ---
+        --- Results 
 2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp -
 1. Total cars seen:
    2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - Total cars seen: 398
@@ -53,7 +53,7 @@ Gradle Issue #35054 - https://github.com/gradle/gradle/issues/35054.
    2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-01T23:30: 0
    2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp -
    Traffic Data Processor finished.
-
+---
             
 
 

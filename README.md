@@ -18,7 +18,7 @@ Gradle Issue #35054 - https://github.com/gradle/gradle/issues/35054.
 
 <u> Instructions to build and run the project </u>
 
-- Make sure you have Java 21 and Gradle 9.1 installed.
+- Make sure you have Java 21 installed.
 - git clone https://github.com/kul-parella/TrafficDataProcessor.git
 - cd TrafficDataProcessor
 - clean and build the project using gradle command -  <i> ./gradlew clean build  </i>  

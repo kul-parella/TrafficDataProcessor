@@ -29,31 +29,32 @@ Gradle Issue #35054 - https://github.com/gradle/gradle/issues/35054.
 - After successfully running app with above commands, results and be seen in console logs 
 
 
-<u> sample logs from previous runs </u>
+## Sample Output
 
-        --- Results 
-2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp -
-1. Total cars seen:
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - Total cars seen: 398
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp -
-2. Cars per day:
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-01: 179
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-05: 81
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-08: 134
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-09: 4
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp -
-3. Top 3 half-hours with most cars:
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-01T07:30: 46
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-01T08:00: 42
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-08T18:00: 33
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp -
-4. one and half hour period with least cars:
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-01T15:00: 9
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-01T15:30: 11
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp - 2021-12-01T23:30: 0
-   2025-12-17 01:25:45 INFO  [main] traffic.TrafficDataProcessorApp -
-   Traffic Data Processor finished.
----
+### 1. Total Cars Seen
+**398**
+
+### 2. Cars Per Day
+| Date       | Cars |
+|-----------|------|
+| 2021-12-01 | 179  |
+| 2021-12-05 | 81   |
+| 2021-12-08 | 134  |
+| 2021-12-09 | 4    |
+
+### 3. Top 3 Half-Hours With Most Cars
+| Time Slot              | Cars |
+|-----------------------|------|
+| 2021-12-01 07:30–08:00 | 46   |
+| 2021-12-01 08:00–08:30 | 42   |
+| 2021-12-08 18:00–18:30 | 33   |
+
+### 4. 1.5-Hour Period With Least Cars
+| Time Slot              | Cars |
+|-----------------------|------|
+| 2021-12-01 15:00–15:30 | 9    |
+| 2021-12-01 15:30–16:00 | 11   |
+| 2021-12-01 23:30–00:00 | 0    |
             
 
 

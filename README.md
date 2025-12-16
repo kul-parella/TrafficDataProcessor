@@ -21,8 +21,8 @@ Gradle Issue #35054 - https://github.com/gradle/gradle/issues/35054.
 - Make sure you have Java 21 installed.
 - git clone https://github.com/kul-parella/TrafficDataProcessor.git
 - cd TrafficDataProcessor
-- clean and build the project using gradle command -  <i> ./gradlew clean build  </i>  
-- to run use gradle run command -  <i> ./gradlew run </i> or directly run through jar using <i> java -jar build/libs/TrafficDataProcessor-1.0.0.jar </i>
+- clean and build the project using gradle command -     <i> ./gradlew clean build  </i>  
+- to run use gradle run command -    <i> ./gradlew run </i>    or directly run through jar using    <i> java -jar build/libs/TrafficDataProcessor-1.0.0.jar </i>
 - By default, the application looks for a file named traffic.txt in the project root
 - You can also provide a custom file path as an argument - <i> ./gradlew run --args="path to external file" </i>
 - After successfully running app with above commands, results can be seen in console logs 
